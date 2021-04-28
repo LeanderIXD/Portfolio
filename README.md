@@ -1,6 +1,6 @@
 Portfolio
 ================
-[Version 7](https://leanderixd.github.io/Portfolio/index-7.html)   
+[Version 7](https://leanderixd.github.io/portfolio/index-7.html)   
 
 
 
