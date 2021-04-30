@@ -27,6 +27,77 @@ h1 {
     font-family: 'Castoro', serif;
 }
 
+/*--- Images ---*/
+video {
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+video:hover {
+    -webkit-filter: grayscale(0%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+
+img {
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+img:hover {
+    -webkit-filter: grayscale(0%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+
+/*--- GRAIN ---*/
+.background img {
+    height: 100vh;
+    width: 100vh;
+    z-index: 10000
+}
+
+.background img:after {
+    animation: grain 8s steps(10) infinite;
+
+    content: "";
+    height: 300%;
+    left: -50%;
+    position: fixed;
+    top: -100%;
+    width: 300%;
+}
+
+@keyframes grain {
+
+    0%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    10% {
+        transform: translate(-5%, -10%);
+    }
+
+    30% {
+        transform: translate(3%, -15%);
+    }
+
+    50% {
+        transform: translate(12%, 9%);
+    }
+
+    70% {
+        transform: translate(9%, 4%);
+    }
+
+    90% {
+        transform: translate(-1%, 7%);
+    }
+}
+
 /*--- SCROLL BAR ---*/
 body::-webkit-scrollbar {
     display: none;
@@ -37,24 +108,40 @@ body {
 }
 
 /*--- MENU ---*/
-nav {
+.grain {
+    right: 0;
     z-index: 10000;
+    pointer-events: none;
+    animation: grain 8s steps(10) infinite;
+    margin: 0;
+
+    height: 300%;
+    left: -50%;
+    opacity: 0.4;
+    position: fixed;
+    top: -100%;
+    width: 300%;
+}
+
+nav {
+    z-index: 9999;
     top: 0;
     width: 100%;
     margin: 0;
     position: fixed;
 
-    padding: 1em 0;
+    padding: 0em 0;
     font-size: 0.75em;
 }
-.hamburger{
-    z-index: 10000;
+
+.hamburger {
+    z-index: 9999;
 }
 
 .name {
     pointer-events: none;
     top: 1.75em;
-    right: 2em;
+    right: 3.2em;
     width: 100%;
     position: fixed;
     text-align: right;
@@ -219,7 +306,7 @@ header h1 {
 }
 
 .grid {
-    padding: 0 2em;
+    padding: 0 5em;
 }
 
 /* Center website */
@@ -264,12 +351,12 @@ header h1 {
 /* Style the buttons */
 #myBtnContainer {
     padding-left: 5em;
-    padding-bottom: 5em;
+    padding-bottom: 3em;
 }
 
 .btn {
     position: relative;
-    color: #000;
+    color: var(--black);
     text-decoration: none;
     margin: 0px 20px;
     border: none;
@@ -277,7 +364,6 @@ header h1 {
     background-color: var(--black);
     color: var(--white);
     cursor: pointer;
-
     position: relative;
 }
 
