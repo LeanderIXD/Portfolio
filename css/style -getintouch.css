@@ -1,0 +1,27 @@
+h3{
+    margin: auto;
+    text-align: center;
+    padding-top: 50vh;
+    font-family: 'Inconsolata', monospace;
+}
+
+/*---FOOTER---*/
+
+
+footer {
+    text-align: center;
+    padding: 3em 0 7em 0;
+    background-color: var(--blue);
+}
+
+.connections li {
+    margin: 0 15px;
+    display: inline-block;
+}
+
+.connections a:hover svg path {
+    fill: #191919;
+    transition: all 0.2s ease-in-out;
+}
+
+

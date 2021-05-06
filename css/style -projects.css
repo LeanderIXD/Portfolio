@@ -1,0 +1,53 @@
+.project h1{
+    font-family: 'Castoro', serif;
+    font-size: 3em;
+    margin: auto;
+    padding-bottom: 1em;
+    padding-top: 1.5em;
+}
+.project p{
+    margin: auto;
+    padding-bottom: 10em;
+    
+}
+.project {
+    padding: 0 15vw;
+}
+.link{
+    text-decoration: underline;
+}
+
+/*---IMAGES---*/
+
+video {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    position: relative;
+    top:0;
+    left: 0;
+}
+img {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    position: relative;
+    top:0;
+    left: 0;
+}
+
+/*---FOOTER---*/
+
+footer {
+    text-align: center;
+    padding: 3em 0 7em 0;
+    background-color: var(--blue);
+}
+
+.connections li {
+    margin: 0 15px;
+    display: inline-block;
+}
+
+.connections a:hover svg path {
+    fill: #191919;
+    transition: all 0.2s ease-in-out;
+}

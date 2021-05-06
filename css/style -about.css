@@ -1,0 +1,22 @@
+.aboutme {
+    margin: auto 15vw;
+    align-content: center;
+    text-align: left;
+}
+
+img {
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+
+}
+
+header {
+    height: auto;
+    width: auto;
+    margin: auto;
+    display: block;
+    width: 40%;
+    max-height: auto;
+    max-width: auto;
+}
